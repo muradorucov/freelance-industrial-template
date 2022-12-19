@@ -128,7 +128,7 @@ header {
     line-height: 1.1;
 }
 
-.about-heading p {
+.about-heading .about-desc {
     font-style: italic;
     font-size: 1.5rem;
     margin: 60px 20px 40px 0;
@@ -240,24 +240,46 @@ header {
     background-size: cover;
 }
 
-.project-bg-2{
+.project-bg-2 {
     background-image: url(../img/project2.png);
 }
-.project-bg-3{
+
+.project-bg-3 {
     background-image: url(../img/project3.png);
 }
-.project-bg-4{
+
+.project-bg-4 {
     background-image: url(../img/project4.png);
 }
-.project-bg-5{
+
+.project-bg-5 {
     background-image: url(../img/project5.png);
 }
-.project-bg-6{
+
+.project-bg-6 {
     background-image: url(../img/project6.png);
 }
-.project-bg-7{
+
+.project-bg-7 {
     background-image: url(../img/project7.png);
 }
-.project-bg-8{
+
+.project-bg-8 {
     background-image: url(../img/project8.png);
+}
+
+/*  */
+
+.map img {
+    width: 510px;
+    height: 325px;
+}
+
+.map-heading h2 {
+    color: #000;
+}
+
+.map-heading p {
+    margin-top: 60px;
+    color: #000;
 }
