@@ -378,6 +378,9 @@ header {
     color: #ffffff;
     margin-bottom: 100px;
 }
+#testimonials .heading-custom::after {
+    left: 250px;
+}
 
 .feedback-info {
     padding: 22px 33px 0;

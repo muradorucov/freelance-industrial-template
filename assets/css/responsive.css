@@ -28,6 +28,7 @@
     .header-img img {
         width: 289px;
     }
+
     .header-content {
         width: 477px;
     }
@@ -35,31 +36,114 @@
     .service-icon {
         margin-right: 4%;
     }
-    .service-item{
-        margin:30px 0 ;
+
+    .service-item {
+        margin: 30px 0;
     }
-    .service-content h3{
+
+    .service-content h3 {
         font-size: 1.2rem;
     }
-    .service-content p{
+
+    .service-content p {
         font-size: 15px;
     }
-    .feedback-info{
+
+    .feedback-info {
         padding: 15px 12px 0;
     }
-    .feedback-info, .customer-info{
+
+    .feedback-info,
+    .customer-info {
         width: 217px;
     }
-    .statistics-item p{
+
+    .statistics-item p {
         font-size: 14px;
     }
-    .services-heading h2::after{
-        left:250px;
+
+    .services-heading h2::after {
+        left: 250px;
+    }
+
+    .partnet-item {
+        display: flex;
+        justify-content: center;
     }
 }
 
 @media screen and (max-width:767px) {
-    .header-img{
+    .header-img {
         display: none;
+    }
+
+    #testimonials .heading-custom {
+        text-align: center;
+    }
+
+    .feedback-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feedback-info,
+    .customer-info {
+        width: 272px;
+    }
+
+    .services-heading h2::after {
+        left: 188px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .header-content {
+        width: 97%;
+    }
+
+    .header-content h2 {
+        font-size: 1rem;
+    }
+
+    .header-content .heading-custom {
+        font-size: 2rem;
+    }
+
+    .header-content p {
+        margin:0;
+    }
+
+    .header-btn {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .services-heading h2::after {
+        left: 172px;
+    }
+
+    .statistics-item {
+        margin-bottom: 40px;
+    }
+
+    .heading-custom {
+        /* text-align: center; */
+        font-size: 2rem;
+    }
+
+    #workgroup .heading-custom {
+        font-size: 2rem !important;
+    }
+
+    #services .heading-custom::after,
+    #gallery .heading-custom::after,
+    #workgroup .heading-custom::after,
+    #testimonials .heading-custom::after {
+        left: 105px;
+    }
+
+    #news .heading-custom::after {
+        left: 60px;
     }
 }
