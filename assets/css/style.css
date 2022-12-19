@@ -100,7 +100,6 @@ header {
 .header-img img {
     width: 348px;
     height: 571px;
-    object-fit: cover;
     background-size: cover;
     background-position: 50% 50%;
     margin-top: 68px;
@@ -140,8 +139,6 @@ header {
 }
 
 /* Services Category Start */
-
-
 .services-category-item {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/services1.png);
     min-height: 312px;
@@ -171,7 +168,7 @@ header {
     margin: 34px 20px 20px;
 }
 
-/* Services Start */
+/* SERVICES SECTION START */
 
 
 .services-heading {
@@ -207,7 +204,7 @@ header {
     width: 116px;
     border-radius: 10px;
     margin-right: 10%;
-    padding: 12px;
+    padding: 5px;
     border: 2px solid #f4cb08;
 }
 
@@ -221,7 +218,7 @@ header {
 }
 
 
-/*  */
+/* PROJECTS SECTION START */
 
 #gallery,
 #testimonials {
@@ -269,11 +266,10 @@ header {
     background-image: url(../img/project8.png);
 }
 
-/*  */
+/*  MAP SECTION START*/
 
 .map img {
-    width: 510px;
-    height: 325px;
+    width: 100%;
 }
 
 .map-heading h2 {
@@ -285,7 +281,7 @@ header {
     color: #000;
 }
 
-/*  */
+/* STATISTICS SECTION START */
 #statistics {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../img/statistics.jpeg);
     background-position: 50% 50%;
@@ -324,7 +320,7 @@ header {
     background-color: #f4cb08;
 }
 
-/*  */
+/* WORKGROUP SECTION START */
 .workgroup-item {
     color: #000;
     display: flex;
@@ -346,7 +342,7 @@ header {
 
 .workgroup-item h3 {
     font-weight: 400;
-    font-size: 1.875rem;
+    font-size: 1.5rem;
     line-height: 1.2;
     margin-top: 30px;
 }
@@ -356,26 +352,32 @@ header {
     margin: 20px 20px 25px;
 }
 
-/*  */
+/*  FEEDBACK SECTION START */
+
 #testimonials {
     padding-bottom: 70px;
 }
 
 #testimonials h3,
-#testimonials h2 {
+#testimonials h4 {
     font-weight: 400;
-    font-size: 2.25rem;
+}
+
+
+#testimonials h3 {
+    font-size: 1.6rem;
+}
+
+#testimonials h4{
+    font-size: 1.4rem;
 
 }
+
 
 #testimonials .heading-custom {
     color: #ffffff;
     margin-bottom: 100px;
 }
-
-/* .feedback-item {
-    
-} */
 
 .feedback-info {
     padding: 22px 33px 0;
@@ -412,7 +414,7 @@ header {
     color: #f4cb08;
 }
 
-/*  */
+/*  PARTNERS SECTION START*/
 
 #partners {
     background-color: #171717;
@@ -421,7 +423,7 @@ header {
 
 
 
-/*  */
+/*  NES SECTION START*/
 
 
 #news .heading-custom::after {
@@ -468,7 +470,7 @@ header {
     border-bottom: 2px solid #000;
 }
 
-/*  */
+/*  PURCHASE SECTION START*/
 
 #purchase {
     background-color: #f4cb08;
@@ -484,7 +486,7 @@ header {
     font-weight: 400;
 }
 
-/*  */
+/*  FOOTER SECTION START*/
 
 footer {
     background-color: #333333;

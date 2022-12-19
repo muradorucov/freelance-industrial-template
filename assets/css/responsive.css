@@ -1,0 +1,65 @@
+@media screen and (max-width:1120px) {
+    .header-img img {
+        width: 287px;
+        height: 474px;
+        margin-top: 166px;
+    }
+
+    .header-content {
+        width: 615px;
+    }
+
+    .service-icon {
+        margin-right: 6%;
+    }
+
+    .feedback-info,
+    .customer-info {
+        width: 283px;
+    }
+
+    .feedback-info img {
+        top: -3px;
+    }
+}
+
+
+@media screen and (max-width:991px) {
+    .header-img img {
+        width: 289px;
+    }
+    .header-content {
+        width: 477px;
+    }
+
+    .service-icon {
+        margin-right: 4%;
+    }
+    .service-item{
+        margin:30px 0 ;
+    }
+    .service-content h3{
+        font-size: 1.2rem;
+    }
+    .service-content p{
+        font-size: 15px;
+    }
+    .feedback-info{
+        padding: 15px 12px 0;
+    }
+    .feedback-info, .customer-info{
+        width: 217px;
+    }
+    .statistics-item p{
+        font-size: 14px;
+    }
+    .services-heading h2::after{
+        left:250px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .header-img{
+        display: none;
+    }
+}
