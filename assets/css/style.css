@@ -223,7 +223,8 @@ header {
 
 /*  */
 
-#gallery {
+#gallery,
+#testimonials {
     background-color: #2c2c2c;
 }
 
@@ -353,4 +354,66 @@ header {
 .workgroup-item p {
     text-align: center;
     margin: 20px 20px 25px;
+}
+
+/*  */
+#testimonials {
+    padding-bottom: 70px;
+}
+
+#testimonials h3,
+#testimonials h2 {
+    font-weight: 400;
+    font-size: 2.25rem;
+
+}
+
+#testimonials .heading-custom {
+    color: #ffffff;
+    margin-bottom: 100px;
+}
+
+/* .feedback-item {
+    
+} */
+
+.feedback-info {
+    padding: 22px 33px 0;
+    width: 341px;
+    height: 217px;
+    border: 1px solid #b3b3b3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback-info p {
+    text-align: center;
+}
+
+.feedback-info img {
+    position: relative;
+    top: 19px;
+}
+
+.customer-info {
+    padding: 22px 33px 0;
+    width: 341px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.customer-info h3 {
+    font-weight: 400;
+}
+
+.customer-info h4 {
+    font-weight: 400;
+    color: #f4cb08;
+}
+
+/*  */
+
+#partners {
+    background-color: #171717;
 }
