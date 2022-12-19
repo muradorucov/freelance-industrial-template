@@ -467,3 +467,33 @@ header {
     padding-bottom: 4px;
     border-bottom: 2px solid #000;
 }
+
+/*  */
+
+#purchase {
+    background-color: #f4cb08;
+}
+
+.btn-mrg {
+    margin: 0;
+}
+
+.purchase-desc h2 {
+    font-size: 3rem;
+    margin: 20px 0 0;
+    font-weight: 400;
+}
+
+/*  */
+
+footer {
+    background-color: #333333;
+}
+
+.footer-desc{
+    font-size: 14px;
+}
+
+.footer-desc a{
+    color: #f4cb08;
+}
