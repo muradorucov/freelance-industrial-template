@@ -32,6 +32,15 @@
     .header-content {
         width: 477px;
     }
+    #services .heading-custom::after{
+        left: 180px;
+    }
+    #gallery .heading-custom::after{
+        left: 160px;
+    }
+    #workgroup .heading-custom::after{
+        left: 166px;
+    }
 
     .service-icon {
         margin-right: 4%;
@@ -94,6 +103,10 @@
 
     .services-heading h2::after {
         left: 188px;
+    }
+
+    #testimonials .heading-custom::after{
+        left: 180px;
     }
 }
 
