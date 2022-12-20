@@ -32,15 +32,6 @@
     .header-content {
         width: 477px;
     }
-    #services .heading-custom::after{
-        left: 180px;
-    }
-    #gallery .heading-custom::after{
-        left: 160px;
-    }
-    #workgroup .heading-custom::after{
-        left: 166px;
-    }
 
     .service-icon {
         margin-right: 4%;
@@ -71,9 +62,6 @@
         font-size: 14px;
     }
 
-    .services-heading h2::after {
-        left: 250px;
-    }
 
     .partnet-item {
         display: flex;
@@ -101,13 +89,6 @@
         width: 272px;
     }
 
-    .services-heading h2::after {
-        left: 188px;
-    }
-
-    #testimonials .heading-custom::after{
-        left: 180px;
-    }
 }
 
 @media screen and (max-width: 575px) {
@@ -132,9 +113,6 @@
         flex-wrap: wrap;
     }
 
-    .services-heading h2::after {
-        left: 172px;
-    }
 
     .statistics-item {
         margin-bottom: 40px;
@@ -149,14 +127,10 @@
         font-size: 2rem !important;
     }
 
-    #services .heading-custom::after,
-    #gallery .heading-custom::after,
-    #workgroup .heading-custom::after,
-    #testimonials .heading-custom::after {
-        left: 105px;
-    }
+}
 
-    #news .heading-custom::after {
-        left: 60px;
+@media screen and (max-width: 420px) {
+    .about-heading h2{
+        font-size: 1.5rem;
     }
 }

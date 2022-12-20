@@ -30,32 +30,36 @@ header {
 }
 
 .header-content h2 {
-    text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 1px;
-    font-size: 1.5rem;
     line-height: 1.1;
     margin: 122px 20px 0 0;
+
+}
+
+.header-content h1 {
+    font-size: 3rem;
+
+}
+
+.heading-h2 {
     color: #f4cb08;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.heading-border {
+    width: 97px;
+    height: 4px;
+    background-color: #f4cb08;
 }
 
 .heading-custom {
     position: relative;
     text-transform: uppercase;
-    font-size: 3rem;
     margin: 20px 20px 30px 0;
     font-weight: 400;
     line-height: 1.1;
-}
-
-.heading-custom::after {
-    content: " ";
-    position: absolute;
-    bottom: -30px;
-    left: 0;
-    width: 97px;
-    height: 3px;
-    background-color: #f4cb08;
 }
 
 .header-content p {
@@ -122,7 +126,7 @@ header {
 
 .about-heading h2 {
     font-weight: 900;
-    margin: 15px 20px 0 0;
+    margin: 15px 20px 30px 0;
     font-size: 2.25rem;
     line-height: 1.1;
 }
@@ -130,7 +134,7 @@ header {
 .about-heading .about-desc {
     font-style: italic;
     font-size: 1.5rem;
-    margin: 60px 20px 40px 0;
+    margin: 30px 20px 40px 0;
     color: #b3b3b3;
 }
 
@@ -164,8 +168,13 @@ header {
     margin: 30px 20px 0;
 }
 
+.services-category-item .heading-border {
+    margin: 20px 20px 0;
+
+}
+
 .services-category-item p {
-    margin: 34px 20px 20px;
+    margin: 20px 20px 20px;
 }
 
 /* SERVICES SECTION START */
@@ -187,12 +196,8 @@ header {
 
 .services-heading h2 {
     font-weight: 900;
-    margin: 20px 20px 0;
+    margin: 20px 20px 30px;
     color: #000;
-}
-
-.services-heading h2::after {
-    left: 172px;
 }
 
 .service-item {
@@ -227,7 +232,11 @@ header {
 
 #gallery .heading-custom {
     color: #ffffff;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+}
+
+#gallery .heading-border {
+    margin-bottom: 30px;
 }
 
 .project-item {
@@ -305,20 +314,11 @@ header {
 
 .statistics-item p {
     color: #000;
-    margin: 20px auto 20px;
+    margin: 30px auto;
     position: relative;
 
 }
 
-.statistics-item p::after {
-    content: " ";
-    position: absolute;
-    bottom: -30px;
-    left: 45px;
-    width: 57px;
-    height: 3px;
-    background-color: #f4cb08;
-}
 
 /* WORKGROUP SECTION START */
 .workgroup-item {
@@ -368,7 +368,7 @@ header {
     font-size: 1.6rem;
 }
 
-#testimonials h4{
+#testimonials h4 {
     font-size: 1.4rem;
 
 }
@@ -376,10 +376,10 @@ header {
 
 #testimonials .heading-custom {
     color: #ffffff;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
-#testimonials .heading-custom::after {
-    left: 250px;
+#testimonials .heading-border {
+    margin-bottom: 40px;
 }
 
 .feedback-info {
@@ -429,9 +429,6 @@ header {
 /*  NES SECTION START*/
 
 
-#news .heading-custom::after {
-    left: 107px;
-}
 
 .news-item {
     color: #111111;
@@ -495,10 +492,10 @@ footer {
     background-color: #333333;
 }
 
-.footer-desc{
+.footer-desc {
     font-size: 14px;
 }
 
-.footer-desc a{
+.footer-desc a {
     color: #f4cb08;
 }
