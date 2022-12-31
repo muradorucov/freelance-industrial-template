@@ -1,8 +1,39 @@
+html {
+    --scrollbarBG: #CFD8DC;
+    --thumbBG: #90A4AE;
+    --thumbBGHOVER: #727b80;
+}
+
+body::-webkit-scrollbar {
+    width: 11px;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    cursor: pointer;
+    background-color: var(--thumbBGHOVER);
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     color: #ffffff;
     font-size: 1rem;
     line-height: 1.6;
+    padding-right: 0 !important;
 }
 
 h1,
@@ -14,6 +45,17 @@ h6 {
     font-family: Roboto, sans-serif;
 }
 
+.modal button {
+    outline: 0;
+}
+
+.modal-title {
+    color: #dcb707;
+}
+
+.modal-body {
+    color: #000;
+}
 
 /* HEader section Start */
 
@@ -23,6 +65,51 @@ header {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+    background: #f2f2f2;
+    box-shadow: 0.125rem 0.25rem 1.25rem 0.0875rem rgb(45 45 45 / 13%);
+    color: #000;
+    font-weight: 600;
+    height: 70px;
+    text-align: center;
+    z-index: 10;
+    display: block;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.close-btn,
+.responsive-btn {
+    display: none;
+}
+
+.menu-list li {
+    margin-right: 40px;
+    font-size: 14px;
+}
+
+.menu-list li:last-child {
+    margin: 0;
+}
+
+.menu-list a {
+    color: #000;
+    text-decoration: none;
+    transition: all .2s ease-in;
+}
+
+.menu-list a:hover {
+    transition: all .2s ease-in;
+    color: #f4cb08;
 }
 
 .header-content {
@@ -144,6 +231,7 @@ header {
 
 /* Services Category Start */
 .services-category-item {
+    cursor: pointer;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/services1.png);
     min-height: 312px;
     background-position: 50% 50%;
@@ -153,6 +241,15 @@ header {
     flex-direction: column;
     justify-content: flex-end;
 }
+
+#services-category .modal-body .heading-custom {
+    margin-bottom: 16px;
+}
+
+#services-category .modal-body p {
+    margin-top: 16px;
+}
+
 
 .bg-1 {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/services2.png);
@@ -239,7 +336,19 @@ header {
     margin-bottom: 30px;
 }
 
+.project-img {
+    width: 100%;
+}
+
+
+.project-img img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
 .project-item {
+    cursor: pointer;
     background-image: url(../img/project1.png);
     background-position: 50% 50%;
     min-height: 287px;
@@ -378,6 +487,7 @@ header {
     color: #ffffff;
     margin-bottom: 20px;
 }
+
 #testimonials .heading-border {
     margin-bottom: 40px;
 }
@@ -401,12 +511,28 @@ header {
     top: 19px;
 }
 
+.customer-img {
+    width: 100%;
+}
+
+.customer-img img {
+    width: 100%;
+}
+
+
 .customer-info {
     padding: 22px 33px 0;
     width: 341px;
     text-align: center;
     margin-top: 30px;
 }
+
+.modal-body .customer-info {
+    text-align: left;
+    padding-left: 0;
+    margin-top: 0;
+}
+
 
 .customer-info h3 {
     font-weight: 400;
@@ -499,3 +625,4 @@ footer {
 .footer-desc a {
     color: #f4cb08;
 }
+

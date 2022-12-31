@@ -1,4 +1,36 @@
 @media screen and (max-width:1120px) {
+    .menu-list {
+        display: none ;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #131313;
+        padding-top: 40px;
+    }
+
+    .menu-list li {
+        font-size: 20px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+
+    .menu-list a {
+        color: #fff;
+    }
+    .close-btn, .responsive-btn{
+        display: inline-block;
+        background-color: transparent;
+        outline: 0;
+        border: 0;
+    }
+    .close-btn:focus, .responsive-btn:focus{
+        outline: 0;
+    }
+
+
     .header-img img {
         width: 287px;
         height: 474px;
@@ -105,7 +137,7 @@
     }
 
     .header-content p {
-        margin:0;
+        margin: 0;
     }
 
     .header-btn {
@@ -127,10 +159,14 @@
         font-size: 2rem !important;
     }
 
+    .res-mr{
+        margin: 0 !important;
+    }
+
 }
 
 @media screen and (max-width: 420px) {
-    .about-heading h2{
+    .about-heading h2 {
         font-size: 1.5rem;
     }
 }
