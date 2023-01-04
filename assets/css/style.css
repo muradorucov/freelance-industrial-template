@@ -586,6 +586,11 @@ header {
 }
 
 
+.partner-item:hover  img{
+    opacity: .6;
+    transition: ease-in .1s;
+}
+
 
 
 /*  NES SECTION START*/
