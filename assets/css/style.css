@@ -347,6 +347,10 @@ header {
     object-fit: cover;
 }
 
+.project {
+    overflow: hidden;
+}
+
 .project-item {
     cursor: pointer;
     background-image: url(../img/project1.png);
@@ -354,6 +358,14 @@ header {
     min-height: 287px;
     background-repeat: no-repeat;
     background-size: cover;
+    scale: 1;
+    transition: all .3s ease-in;
+}
+
+.project-item:hover {
+    scale: 1.4;
+    transition: all .3s ease-out;
+
 }
 
 .project-bg-2 {
@@ -431,6 +443,7 @@ header {
 
 /* WORKGROUP SECTION START */
 .workgroup-item {
+    cursor: pointer;
     color: #000;
     display: flex;
     align-items: center;
@@ -443,15 +456,26 @@ header {
     padding: 21px;
     border-radius: 50%;
     background-color: #f4cb08;
+
 }
+
+.workgroup-item:hover .workgroup-icon{
+    background-color: #bdf004b9;
+    transition: all .2s ease-in-out;
+}
+.workgroup-item:hover>h3{
+    color: #f4cb08;
+    transition: all .2s ease-in-out;
+}
+
 
 .workgroup-icon svg {
     fill: #ffffff;
 }
 
 .workgroup-item h3 {
-    font-weight: 400;
-    font-size: 1.5rem;
+    font-weight: 500;
+    font-size: 1.4rem;
     line-height: 1.2;
     margin-top: 30px;
 }
@@ -491,6 +515,9 @@ header {
 #testimonials .heading-border {
     margin-bottom: 40px;
 }
+.feedback-item{
+    cursor: pointer;
+}
 
 .feedback-info {
     padding: 22px 33px 0;
@@ -500,6 +527,15 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all .2s ease-out;
+
+}
+.feedback-item:hover .feedback-info{
+    transition: all .2s ease-in;
+    border: 1px solid #e6e0e0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-width: 5px;
 }
 
 .feedback-info p {
@@ -625,4 +661,3 @@ footer {
 .footer-desc a {
     color: #f4cb08;
 }
-
