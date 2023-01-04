@@ -93,23 +93,18 @@ header {
 }
 
 .menu-list li {
+    cursor: pointer;
     margin-right: 40px;
     font-size: 14px;
-}
-
-.menu-list li:last-child {
-    margin: 0;
-}
-
-.menu-list a {
     color: #000;
-    text-decoration: none;
     transition: all .2s ease-in;
 }
-
-.menu-list a:hover {
+.menu-list li:hover {
     transition: all .2s ease-in;
     color: #f4cb08;
+}
+.menu-list li:last-child {
+    margin: 0;
 }
 
 .header-content {

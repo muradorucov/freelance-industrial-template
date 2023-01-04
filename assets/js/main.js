@@ -7,7 +7,6 @@ const body = document.querySelector("body")
 const responsiveBn = document.querySelector(".responsive-btn")
 const menu = document.querySelector(".menu-list")
 const closeBtn = document.querySelector(".close-btn");
-// const menuLi = document.querySelectorAll(".menu-list li")
 
 
 responsiveBn.addEventListener("click", function () {
@@ -68,3 +67,15 @@ window.addEventListener('scroll', () => {
 let topBtn = document.querySelector(".top-btn");
 topBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
 window.onscroll = () => window.scrollY > 500 ? topBtn.style.opacity = 1 : topBtn.style.opacity = 0
+
+
+const menuLi = document.querySelectorAll(".menu-list li")
+services = document.querySelector("#services")
+menuLi.forEach((item) => {
+    item.onclick = () => {
+        console.log();
+        // menu.style.display = "none";
+        window.scrollTo({ top: document.querySelector(`${item.title}`).offsetTop-60, behavior: "smooth" })
+        console.log({ top: document.querySelector(`${item.title}`).offsetTop-60, behavior: "smooth" });
+    }
+})
