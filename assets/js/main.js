@@ -58,7 +58,7 @@ window.addEventListener('scroll', () => {
                     counterList[3].textContent = "9";
                 }
             }
-        }, 500);
+        }, 250);
     }
 })
 
