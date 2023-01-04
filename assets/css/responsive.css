@@ -1,13 +1,18 @@
 @media screen and (max-width:1120px) {
     .menu-list {
-        display: none ;
+        display: block ;
         position: fixed;
         top: 0;
         bottom: 0;
-        left: 0;
+        left: 1200px;
         right: 0;
         background-color: #131313;
         padding-top: 40px;
+        transition: all ease-in .4s;
+    }
+
+    .responsive-menu{
+        left: 0px !important;
     }
 
     .menu-list li {
@@ -17,8 +22,12 @@
     }
 
 
-    .menu-list a {
+    .menu-list li {
         color: #fff;
+    }
+
+    .close-btn{
+        margin-bottom: 20px;
     }
     .close-btn, .responsive-btn{
         display: inline-block;
@@ -168,5 +177,9 @@
 @media screen and (max-width: 420px) {
     .about-heading h2 {
         font-size: 1.5rem;
+    }
+
+    .purchase-desc h2{
+        font-size: 2rem;
     }
 }

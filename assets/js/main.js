@@ -1,26 +1,36 @@
-//scrollto
-// let navlinks =document.querySelectorAll(".menu-list .scrollto")
-
-
-//responsive-menu
 const body = document.querySelector("body")
 const responsiveBn = document.querySelector(".responsive-btn")
 const menu = document.querySelector(".menu-list")
 const closeBtn = document.querySelector(".close-btn");
+const menuLi = document.querySelectorAll(".menu-list li")
+let topBtn = document.querySelector(".top-btn");
 
 
-responsiveBn.addEventListener("click", function () {
-    menu.style.display = "block";
+// <<<<<<<<<<<<<<< RESPONSIVE MENU >>>>>>>>>>>>>>>
+function getMenuShow() {
+    menu.classList.add("responsive-menu")
+}
+
+function getMenuDisabled() {
+    menu.classList.remove("responsive-menu")
+}
+responsiveBn.addEventListener("click", getMenuShow)
+closeBtn.addEventListener("click", getMenuDisabled)
+
+menuLi.forEach((item) => {
+    item.onclick = () => {
+        //menu item click scroll to section
+        sectionOffset = document.querySelector(`${item.title}`).offsetTop - 60
+        window.scrollTo({ top: sectionOffset, behavior: "smooth" })
+        // menu disabled
+        getMenuDisabled()
+    }
 })
 
 
-closeBtn.addEventListener("click", function () {
-    menu.style.display = "none";
-})
 
 
-
-//counter
+//Statistics Section counter 
 window.addEventListener('scroll', () => {
     const counterList = document.querySelectorAll(".number span")
     let sectionInnerHeight = window.innerHeight / 1;
@@ -62,20 +72,6 @@ window.addEventListener('scroll', () => {
 })
 
 
-//scroll to top
-// Get the element
-let topBtn = document.querySelector(".top-btn");
+//Btn click scroll to window top
 topBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
 window.onscroll = () => window.scrollY > 500 ? topBtn.style.opacity = 1 : topBtn.style.opacity = 0
-
-
-const menuLi = document.querySelectorAll(".menu-list li")
-services = document.querySelector("#services")
-menuLi.forEach((item) => {
-    item.onclick = () => {
-        console.log();
-        // menu.style.display = "none";
-        window.scrollTo({ top: document.querySelector(`${item.title}`).offsetTop-60, behavior: "smooth" })
-        console.log({ top: document.querySelector(`${item.title}`).offsetTop-60, behavior: "smooth" });
-    }
-})
