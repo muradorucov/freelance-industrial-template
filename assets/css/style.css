@@ -198,10 +198,11 @@ header {
 }
 
 
-.section-heading:hover .heading-border{
+.section-heading:hover .heading-border {
     transition: ease-in .3s;
     width: 117px;
 }
+
 /* Header section end */
 
 /* About section Start */
@@ -465,11 +466,12 @@ header {
 
 }
 
-.workgroup-item:hover .workgroup-icon{
+.workgroup-item:hover .workgroup-icon {
     background-color: #bdf004b9;
     transition: all .2s ease-in-out;
 }
-.workgroup-item:hover>h3{
+
+.workgroup-item:hover>h3 {
     color: #f4cb08;
     transition: all .2s ease-in-out;
 }
@@ -521,7 +523,8 @@ header {
 #testimonials .heading-border {
     margin-bottom: 40px;
 }
-.feedback-item{
+
+.feedback-item {
     cursor: pointer;
 }
 
@@ -536,7 +539,8 @@ header {
     transition: all .2s ease-out;
 
 }
-.feedback-item:hover .feedback-info{
+
+.feedback-item:hover .feedback-info {
     transition: all .2s ease-in;
     border: 1px solid #e6e0e0;
     border-bottom-left-radius: 15px;
@@ -592,7 +596,7 @@ header {
 }
 
 
-.partner-item:hover  img{
+.partner-item:hover img {
     opacity: .6;
     transition: ease-in .1s;
 }
@@ -671,4 +675,25 @@ footer {
 
 .footer-desc a {
     color: #f4cb08;
+}
+
+.top-btn {
+    width: 40px;
+    height: 40px;
+    outline: 0;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0.10rem 0.25rem 0.5rem  0rem rgba(45, 45, 45, 0.349);
+    background-color: #f4cb08;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    transform: scale(1.3);
+    opacity: 0;
+    transition: .3s;
+}
+
+.top-btn:focus{
+    outline: 0;
 }
