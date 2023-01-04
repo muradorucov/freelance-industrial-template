@@ -30,32 +30,29 @@ menuLi.forEach((item) => {
 
 // <<<<<<<<<<<<<<<Statistics Section counter >>>>>>>>>>>>>>>
 
-document.addEventListener("DOMContentLoaded", () => {
-    window.addEventListener('scroll', () => {
-        const counterList = document.querySelectorAll(".number span")
-        let sectionInnerHeight = window.innerHeight / 1;
-        let sectionPositionTop = counterList[0].getBoundingClientRect().top;
-        console.log( sectionInnerHeight, sectionPositionTop);
-        function counter(id, start, end) {
-            let obj = document.getElementById(id),
-                current = start,
-                increment = end > start ? 1 : -1,
-                timer = setInterval(() => {
-                    current += increment;
-                    obj.textContent = current;
-                    if (current == end) {
-                        clearInterval(timer);
-                    }
-                }, 250);
-        }
-        if (sectionInnerHeight < sectionPositionTop) {
-            counter("count1", 0, 8);
-            counter("count2", 0, 2);
-            counter("count3", 0, 1);
-            counter("count4", 0, 9);
-        }
-    })
-});
+window.addEventListener('scroll', () => {
+    const counterList = document.querySelectorAll(".number span")
+    let sectionInnerHeight = window.innerHeight / 1;
+    let sectionPositionTop = counterList[0].getBoundingClientRect().top;
+    function counter(id, start, end) {
+        let obj = document.getElementById(id),
+            current = start,
+            increment = end > start ? 1 : -1,
+            timer = setInterval(() => {
+                current += increment;
+                obj.textContent = current;
+                if (current == end) {
+                    clearInterval(timer);
+                }
+            }, 250);
+    }
+    if (sectionInnerHeight > sectionPositionTop) {
+        counter("count1", 0, 8);
+        counter("count2", 0, 2);
+        counter("count3", 0, 1);
+        counter("count4", 0, 9);
+    }
+})
 
 //Btn click scroll to window top
 topBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
