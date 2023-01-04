@@ -136,9 +136,10 @@ header {
 }
 
 .heading-border {
-    width: 97px;
-    height: 4px;
+    width: 67px;
+    height: 3px;
     background-color: #f4cb08;
+    transition: ease-in .3s;
 }
 
 .heading-custom {
@@ -196,6 +197,11 @@ header {
     margin-top: 68px;
 }
 
+
+.section-heading:hover .heading-border{
+    transition: ease-in .3s;
+    width: 117px;
+}
 /* Header section end */
 
 /* About section Start */
